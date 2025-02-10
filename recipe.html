@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Card Interface</title>
+    <link rel="stylesheet" href="recipe.css">
+</head>
+<body>
+    
+    <h1>Delicious Recipes</h1>
+    <div class="recipe-container">
+        <div class="recipe-card">
+            <img src="https://images.aws.nestle.recipes/resized/0a0717810b73a1672a029c29788e557b_creamy_alfredo_pasta_long_left_1080_850.jpg" alt="Creamy Alfredo Pasta">
+            <h2>Creamy Alfredo Pasta</h2>
+            <p>A delicious creamy pasta with a rich Alfredo sauce.</p>
+            <button class="view-recipe" data-recipe="1">View Recipe</button>
+        </div>
+        <div class="recipe-card">
+            <img src="https://www.eatingwell.com/thmb/k3RhYf4XhAeqAejYjdInOlSOp6I=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/gettyimages-1124303516-36413b5bf61f45f1b7d18d90000b56b7.jpg" alt="Margherita Pizza">
+            <h2>Margherita Pizza</h2>
+            <p>A classic pizza topped with fresh tomatoes, basil, and mozzarella.</p>
+            <button class="view-recipe" data-recipe="2">View Recipe</button>
+        </div>
+        <div class="recipe-card">
+            <img src="https://www.refreshmyhealth.com/wp-content/uploads/2020/07/how-to-make-a-simple-salad-recipe-vegan-gluten-free-lunch_260-main_img_6804-lrcc.jpg" alt="Caesar Salad">
+            <h2>Caesar Salad</h2>
+            <p>A fresh Caesar salad with crispy croutons and Parmesan cheese.</p>
+            <button class="view-recipe" data-recipe="3">View Recipe</button>
+        </div>
+    </div>
+
+    <!-- Modal for full recipe details -->
+    <div id="recipe-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
+    <script src="recipe.js"></script>
+</body>
+</html>
